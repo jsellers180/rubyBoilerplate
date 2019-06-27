@@ -1,0 +1,9 @@
+CommitMsg:
+  CapitalizedSubject:
+    enabled: false
+
+PreCommit:
+  ALL:
+    on_warn: fail
+  RuboCop:
+    enabled: true

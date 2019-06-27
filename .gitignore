@@ -1,0 +1,20 @@
+# Files to ignore #
+
+.DS_Store
+features/.DS_Store
+
+#.ruby-version
+#features/.ruby-version
+
+#.idea
+features/.idea/
+.idea
+.idea/workspace.xml
+#Gemfile.lock
+#features/Gemfile.lock
+#features/Gemfile
+
+#README.md
+
+features/results/.DS_Store
+ *.html

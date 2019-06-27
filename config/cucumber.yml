@@ -1,0 +1,6 @@
+# https://github.com/cucumber/cucumber/wiki/cucumber.yml
+# Profiles are listed below. They can be run with a -p flag. Running a profile will execute the options listed.
+
+default: -r features/support/ -r features/step_definitions -r features/support/clients -t "not @wip"
+report: --format Bilgerat --format html --out features/results/<%= Time.now.strftime("%Y%m%d-%H%M%S") %>-report.html -t "not @wip"
+smoke-report: --tags @smoketest -t "not @wip" --format html --out features/results/<%= Time.now.strftime("%Y%m%d-%H%M%S") %>-report.html

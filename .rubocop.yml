@@ -1,0 +1,55 @@
+AllCops:
+  Include:
+    - '**/*.rbw'
+    - '**/*.rbx'
+    - '**/*.ru'
+    - '**/*.ruby'
+  Exclude:
+    - db/schema.rb
+    - Gemfile
+
+Style/NumericLiteralPrefix:
+  EnforcedOctalStyle: zero_only
+
+Style/UnneededInterpolation:
+  Exclude:
+      - 'features/step_definitions/web_steps.rb'
+Metrics/BlockLength:
+  Max: 50
+Metrics/AbcSize:
+  Exclude:
+      - 'features/support/paths.rb'
+      - 'features/support/capybara.rb'
+Metrics/CyclomaticComplexity:
+  Exclude:
+      - 'features/support/paths.rb'
+Metrics/MethodLength:
+  Exclude:
+      - 'features/support/paths.rb'
+Metrics/PerceivedComplexity:
+  Exclude:
+      - 'features/support/paths.rb'
+Style/GlobalVars:
+  Exclude:
+      - 'features/support/page/login_page.rb'
+      - 'features/step_definitions/admin_steps.rb'
+      - 'features/support/capybara.rb'
+Metrics/LineLength:
+  Exclude:
+      - 'features/support/page/*.rb'
+      - 'features/step_definitions/admin_steps.rb'
+Metrics/ParameterLists:
+  Exclude:
+      - 'features/support/page/payment_page.rb'
+Security/YAMLLoad:
+  Exclude:
+      - 'features/support/capybara.rb'
+Style/BlockDelimiters:
+  Exclude:
+      - 'features/support/capybara.rb'
+Style/OrAssignment:
+  Exclude:
+      - 'features/support/capybara.rb'
+Style/GuardClause:
+  Exclude:
+      - 'features/step_definitions/admin_steps.rb'

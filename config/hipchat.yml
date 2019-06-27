@@ -1,0 +1,5 @@
+default:
+  user: 'Go Pipeline'
+  auth_token: '48e9faf052cdd596569179f3b3bda3'
+  room: '2049809'
+  error_color: 'red'
