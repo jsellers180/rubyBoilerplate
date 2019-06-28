@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
 # defines capybara configuration
-$env_prod_pass = ENV['PROD_PASS']
-$env_prod_login = ENV['PROD_LOGIN']
 
 require "#{File.dirname(__FILE__)}/extensions.rb"
 require 'capybara/poltergeist'
@@ -18,7 +16,6 @@ end
 
 # sets test target to staging if no target= is not declared at runtime.
 # Targets can be found in env_data.yml
-# changed targets to work with apify urls
 if ENV['target'].nil?
   puts 'target= not defined, defaulting to staging.'.color(33)
   ENV['target'] = 'staging'
@@ -29,7 +26,7 @@ target_config = File.expand_path(File.dirname(__FILE__) + '/env_data.yml')
 polt_config = YAML.load(File.open(target_config))
 target = polt_config[:target]
 application_server = target[ENV['target'].to_sym]
-host_url = "#{application_server[:host]}.hmnow.com:#{application_server[:port]}"
+host_url = "#{application_server[:host]}.website.com:#{application_server[:port]}"
 
 # set capybara defaults to use poltergeist
 Capybara.javascript_driver = :poltergeist

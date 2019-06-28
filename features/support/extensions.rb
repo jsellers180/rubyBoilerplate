@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-# This is from the previous set of tests. I'm not sure where it's used.
-# TODO: investigate where this code is being used
-
 # comment placeholder
 class Hash
   def downcase

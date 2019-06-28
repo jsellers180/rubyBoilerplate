@@ -31,16 +31,11 @@ Metrics/PerceivedComplexity:
       - 'features/support/paths.rb'
 Style/GlobalVars:
   Exclude:
-      - 'features/support/page/login_page.rb'
-      - 'features/step_definitions/admin_steps.rb'
       - 'features/support/capybara.rb'
 Metrics/LineLength:
   Exclude:
       - 'features/support/page/*.rb'
-      - 'features/step_definitions/admin_steps.rb'
-Metrics/ParameterLists:
-  Exclude:
-      - 'features/support/page/payment_page.rb'
+      - 'features/support/capybara.rb'
 Security/YAMLLoad:
   Exclude:
       - 'features/support/capybara.rb'
@@ -50,6 +45,3 @@ Style/BlockDelimiters:
 Style/OrAssignment:
   Exclude:
       - 'features/support/capybara.rb'
-Style/GuardClause:
-  Exclude:
-      - 'features/step_definitions/admin_steps.rb'

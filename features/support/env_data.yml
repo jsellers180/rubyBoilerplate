@@ -7,23 +7,8 @@
 
 :target:
   :staging:
-    :host: "https://staging"
+    :host: "https://www"
     :port: "443"
   :localhost:
     :host: localhost
     :port: "3000"
-  :prod:
-    :host: "https://www"
-    :port:
-  :dev:
-    :host: "https://dev"
-    :port: "443"
-  :qa:
-    :host: "https://qa"
-    :port: "443"
-  :uat:
-    :host: "https://uat"
-    :port: "443"
-  :test:
-    :host: "https://tst"
-    :port: "443"
